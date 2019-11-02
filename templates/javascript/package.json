@@ -1,0 +1,34 @@
+{
+  "name": "fabric-backend-template",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "test": "nyc mocha --recursive",
+    "start": "node src/server.js",
+    "dev": "nodemon -r dotenv/config src/server.js dotenv_config_path=.env"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "fabric-ca-client": "^1.4.4",
+    "fabric-network": "^1.4.4",
+    "helmet": "^3.21.2"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "chai-http": "^4.3.0",
+    "dotenv": "^8.2.0",
+    "mocha": "^6.2.1",
+    "node-mocks-http": "^1.8.0",
+    "nodemon": "^1.19.3",
+    "nyc": "^14.1.1"
+  },
+  "nyc": {
+    "all": true,
+    "include": [
+      "src/**/*.js"
+    ]
+  }
+}
