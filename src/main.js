@@ -47,7 +47,8 @@ export async function createProject(options) {
     const templateDir = path.resolve(
         __dirname,
         '../templates',
-        options.template.toLowerCase()
+        options.template.toLowerCase(),
+        options.language.toLowerCase()
     );
     
     options.templateDirectory = templateDir;

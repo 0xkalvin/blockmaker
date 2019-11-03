@@ -9,6 +9,8 @@ function parseArgumentsIntoOptions(rawArgs) {
         '--git': Boolean,
         '--yes': Boolean,
         '--install': Boolean,
+        '--language': String,
+        '-l': '--language',
         '-g': '--git',
         '-y': '--yes',
         '-i': '--install',
@@ -25,6 +27,7 @@ function parseArgumentsIntoOptions(rawArgs) {
       git:          args['--git'] || false,
       template:     args._[0],
       runInstall:   args['--install'] || false,
+      language:     args['--language'] || ''
     };
 }
 
@@ -32,7 +35,8 @@ function parseArgumentsIntoOptions(rawArgs) {
     questions will be prompted  */
 async function promptForMissingOptions(options) {
     
-    const defaultTemplate = 'JavaScript';
+    const defaultTemplate = 'Backend';
+    const defaultLanguage = 'JavaScript';
     
     /*  CASE 1: -y or -yes passed   */
     if (options.skipPrompts) {
@@ -44,18 +48,31 @@ async function promptForMissingOptions(options) {
    
     const questions = [];
     
-    /*  CASE 2: Language/template not passed */
+    
+    /*  CASE 2: template not passed */
     if (!options.template) {
       questions.push({
         type: 'list',
         name: 'template',
         message: 'Please choose which project template to use',
-        choices: ['JavaScript', 'TypeScript'],
+        choices: ['Backend', 'Chaincode'],
         default: defaultTemplate,
       });
     }
    
-    /*  CASE 3: Not informed if it needs to create a git repo */
+    
+    /*  CASE 3: Language not passed */
+    if (!options.language) {
+      questions.push({
+        type: 'list',
+        name: 'language',
+        message: 'Please choose which language to use',
+        choices: ['JavaScript', 'TypeScript'],
+        default: defaultLanguage,
+      });
+    }
+   
+    /*  CASE 4: Not informed if it needs to create a git repo */
     if (!options.git) {
       questions.push({
         type: 'confirm',
@@ -72,6 +89,7 @@ async function promptForMissingOptions(options) {
       ...options,
       template: options.template || answers.template,
       git:      options.git || answers.git,
+      language: options.language || answers.language,
     };
    }
    
