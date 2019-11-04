@@ -6,7 +6,7 @@ A command-line interface for bootstraping your Hyperledger Fabric projects. It p
 
 
 ```bash
-npm i -g @0xkalvin/blockmaker
+npm i -g blockmaker
 ```
 
 
