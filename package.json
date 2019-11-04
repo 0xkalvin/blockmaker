@@ -1,18 +1,25 @@
 {
-  "name": "@0xkalvin/blockmaker",
+  "name": "blockmaker",
   "version": "1.0.0",
-  "description": "",
+  "description": "A CLI to create templates for projects with Hyperledger Fabric",
   "main": "src/index.js",
   "bin": {
     "@0xkalvin/blockmaker": "bin/blockmaker",
     "blockmaker": "bin/blockmaker"
   },
+  "publishConfig": {
+    "access": "public"
+  },
   "scripts": {
     "test": "mocha --require @babel/register ./test/**/*.js"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/0xkalvin/blockmaker.git"
+  },
   "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "author": "Kalvin Vasconcellos",
+  "license": "MIT",
   "dependencies": {
     "@babel/runtime": "^7.6.3",
     "arg": "^4.1.1",
