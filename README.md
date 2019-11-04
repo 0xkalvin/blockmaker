@@ -23,20 +23,20 @@ blockmaker [template] [options]
 ## Overview
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/0xkalvin/blockmaker/master/doc/1.png" width="350" alt="accessibility text">
+  <img src="https://raw.githubusercontent.com/0xkalvin/blockmaker/master/assets/1.png" width="350" alt="accessibility text">
 </p>
 
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/0xkalvin/blockmaker/master/doc/2.png" width="350" alt="accessibility text">
+  <img src="https://raw.githubusercontent.com/0xkalvin/blockmaker/master/assets/2.png" width="350" alt="accessibility text">
 </p>
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/0xkalvin/blockmaker/master/doc/3.png" width="350" alt="accessibility text">
+  <img src="https://raw.githubusercontent.com/0xkalvin/blockmaker/master/assets/3.png" width="350" alt="accessibility text">
 </p>
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/0xkalvin/blockmaker/master/doc/4.png" width="350" alt="accessibility text">
+  <img src="https://raw.githubusercontent.com/0xkalvin/blockmaker/master/assets/4.png" width="350" alt="accessibility text">
 </p>
 
 

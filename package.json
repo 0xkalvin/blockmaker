@@ -8,12 +8,13 @@
     "blockmaker": "bin/blockmaker"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha --require @babel/register ./test/**/*.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@babel/runtime": "^7.6.3",
     "arg": "^4.1.1",
     "chalk": "^2.4.2",
     "esm": "^3.2.25",
@@ -25,5 +26,16 @@
     "path": "^0.12.7",
     "pkg-install": "^1.0.0",
     "util": "^0.12.1"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.6.4",
+    "@babel/core": "^7.6.4",
+    "@babel/node": "^7.6.3",
+    "@babel/plugin-transform-runtime": "^7.6.2",
+    "@babel/polyfill": "^7.6.0",
+    "@babel/preset-env": "^7.6.3",
+    "@babel/register": "^7.6.2",
+    "chai": "^4.2.0",
+    "mocha": "^6.2.2"
   }
 }
