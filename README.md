@@ -79,9 +79,6 @@ my-backend-app
 ```
 
 
-## Roadmap
-
--   Support for others languages such as Typescript.
 
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
