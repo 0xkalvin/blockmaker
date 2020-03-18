@@ -1,0 +1,39 @@
+{
+    "services": {
+      "databases-for-postgresql": [
+        {
+          "credentials": {
+            "connection": {
+              "postgres": {
+                "authentication": {
+                  "method": "dev",
+                  "password": "dev",
+                  "username": "dev"
+                },
+                "certificate": {
+                  "certificate_base64": "dev",
+                  "name": "dev"
+                },
+                "composed": [
+                  "dev"
+                ],
+                "database": "dev",
+                "hosts": [
+                  {
+                    "hostname": "dev",
+                    "port": 31295
+                  }
+                ],
+                "path": "dev",
+                "query_options": {
+                  "sslmode": "dev"
+                },
+                "scheme": "dev",
+                "type": "dev"
+              }
+            }
+          }
+        }
+      ]
+    }
+   }

@@ -1,0 +1,9 @@
+{
+  "apikey": "dev",
+  "endpoints": "dev",
+  "iam_apikey_description": "dev",
+  "iam_apikey_name": "dev",
+  "iam_role_crn": "dev",
+  "iam_serviceid_crn": "dev",
+  "resource_instance_id": "dev"
+}
